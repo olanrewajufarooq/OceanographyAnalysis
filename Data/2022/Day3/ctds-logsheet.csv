@@ -1,3 +1,3 @@
-,Name,DepDate,DepTime,DepLong,DepLat,RecovDate,RecovTime,RecovLong,RecovLat
-10,1,13-11-2022,12:57:00,006°0.623,42°59.599,13-11-2022,,nan,nan
-11,2,13-11-2022,14:02:00,005°59.033,43°4.674,13-11-2022,,nan,nan
+Name,DepDate,DepTime,DepLong,DepLat,RecovDate,RecovTime,RecovLong,RecovLat
+1,13-11-2022,12:57:00,006°0.623,42°59.599,13-11-2022,,,
+2,13-11-2022,14:02:00,005°59.033,43°4.674,13-11-2022,,,
