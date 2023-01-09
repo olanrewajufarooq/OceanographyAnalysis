@@ -1,10 +1,12 @@
-function drifters = plot_wind_effect(drifter_data, considered_drifters, wind_data, pause_seconds);
+function drifters = plot_wind_effect(drifter_data, considered_drifters, wind_data, pause_seconds)
 %PLOT_TRAJECTORY Summary of this function goes here
 %   Detailed explanation goes here
 
 % Drifter Data
 for i = 1:length(considered_drifters)
-    pos = find([drifter_data.name] == considered_drifters(i))
+    pos = find([drifter_data.name] == considered_drifters(i));
+
+    drifters(i).name = drifter_data(pos).name;
 
     drifters(i).T_data = [drifter_data(pos).Times];
     drifters(i).LAT_data = [drifter_data(pos).Lats];
@@ -38,7 +40,7 @@ hold on
 
 % Simulation Timing
 start_time = min([drifters.deploy_time]);
-end_time = max([drifters.deploy_time]);
+end_time = max([drifters.recov_time]);
 
 dt = datenum(datetime("2020-01-01 00:01:00", "InputFormat", "yyyy-MM-dd HH:mm:ss")) - datenum(datetime("2020-01-01 00:0:00", "InputFormat", "yyyy-MM-dd HH:mm:ss"));
 
