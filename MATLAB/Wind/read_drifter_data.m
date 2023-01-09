@@ -18,7 +18,6 @@ for file = files
     drifter_data(count).Longs = [file_content_struct.Longitude];
     drifter_data(count).Lats = [file_content_struct.Latitude];
 
-
 end
 
 end
