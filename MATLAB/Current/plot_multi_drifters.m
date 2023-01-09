@@ -1,4 +1,4 @@
-function [drifters] = plot_multi_drifters(longs, lats, deploy_times, recov_times, depth, model_data)
+function [drifters] = plot_multi_drifters(longs, lats, deploy_times, recov_times, depth, model_data, pause_seconds)
 %PLOT_TRAJECTORY Summary of this function goes here
 %   Detailed explanation goes here
 
@@ -109,7 +109,7 @@ for t = 1:length(T)-1
     
     
 
-    pause(0.3)
+    pause(pause_seconds)
 
     for i = 1:length(longs)
         if drifters(i).coasted || drifters(i).recovered 

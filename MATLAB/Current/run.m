@@ -12,4 +12,6 @@ recov_times = ["2021-10-13 18:00:00", "2021-10-13 20:00:00", "2021-10-14 00:00:0
 
 depth = 1.0;
 
-drifters = plot_multi_drifters(longs, lats, deploy_times, recov_times, depth, current_data);
+pause_duration = 0.05; % in seconds
+
+drifters = plot_multi_drifters(longs, lats, deploy_times, recov_times, depth, current_data, pause_duration);
